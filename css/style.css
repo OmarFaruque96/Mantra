@@ -1,0 +1,180 @@
+/* google fonts link */
+@import url('https://fonts.googleapis.com/css?family=Dosis:300|Open+Sans:300&display=swap');
+
+/* ============================================
+		global css section 
+===============================================*/
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Dosis', sans-serif;
+}
+p span a{
+	font-family: 'Dosis', sans-serif;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* ============================================
+		header section css section ( navbar )
+===============================================*/
+
+.navbar-light .navbar-brand{
+	color: #21c692;
+}
+.navbar-light .navbar-nav .active .nav-link {
+	color: #21c692;
+}
+.navbar-light .navbar-nav .nav-link{
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #1dac7f;
+} 
+.header_section .search_button{
+	background: transparent;
+	border:none;
+	border-radius: none;
+	top:50%;
+	right: 0%;
+	margin: 0 10px;
+	float: right;
+	color: #21c692;
+}
+
+/*banner section css*/
+
+.header_section{
+	/*background: url(../img/banner/banner.jpg) no-repeat fixed center top;*/
+	background: #000;
+}
+#banner{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 100px;
+	color: #fff;
+	padding: 200px 0;
+}
+#banner h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 54px;
+	letter-spacing: 15px;
+}
+#banner p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	letter-spacing: 5px;
+}
+
+/* ============================================
+		about us section css section ( navbar )
+===============================================*/
+
+#about_us{
+	padding: 120px 0;
+	border-bottom: 1px solid #edeced;
+}
+#about_us .section_title{
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+#about_us .section_title h3{
+	font-family: 'Dosis', sans-serif;
+	font-size: 24px;
+	color: #000;
+	letter-spacing: 5px; 
+}
+/*#about_us .section_title .left{
+	height: 15px;
+	width: 60px;
+	border-bottom: 1px solid #b7b7b7;
+	border-right: 1px solid #b7b7b7;
+}*/
+#about_us .about_us_content .about_icon{
+	text-align: center;
+	margin:20px 0;
+}
+#about_us .about_us_content .about_icon i{
+	padding: 18px;
+	color: #21c692;
+	border: 1px solid #21c692;
+	border-radius: 100%;
+}
+#about_us .about_us_content .about_icon i:hover{
+	background: #21c692;
+	color: #fff;
+}
+#about_us .about_us_content h6{
+	text-transform: uppercase;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+#about_us .about_us_content p{
+	font-size: 16px;
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 1px;
+}
+#about_us .about_us_content .load_more a{
+	font-size: 12px;
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 6px;
+	margin-top: 20px;
+	color: #000;
+	text-decoration: none;
+
+}
+#about_us .about_us_content .load_more i{
+	font-size: 12px;
+	margin-left: 5px;
+	padding-top: 8px; 
+	font-weight: 300;
+	color: #d9d9da;
+}
+
+/* ============================================
+		team section css section ( navbar )
+===============================================*/
+
+#team{
+	padding: 120px 0;
+	border-bottom: 1px solid #edeced;
+}
+#team .section_title{
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 100px;
+}
+#team .section_title h3{
+	font-family: 'Dosis', sans-serif;
+	font-size: 24px;
+	color: #000;
+	letter-spacing: 5px; 
+}
+#team .col-md-4{
+	padding: 0;
+	margin: 0;
+	padding: 1px;
+}
+/*image hover color*/
+[class*=" imghvr-"] h5, [class^=imghvr-]h5{
+  background-color: #21c692;
+}
+
+#team .team_icon{
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+#team .team_icon h5{
+	font-family: 'Dosis', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	letter-spacing: 10px;
+	text-transform: uppercase; 
+}
