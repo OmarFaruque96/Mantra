@@ -150,6 +150,36 @@ p span a{
 	text-transform: uppercase;
 	margin-bottom: 100px;
 }
+/*title line start*/
+#team .section_title .left{
+	border-top: 1px solid #c8c8c8;
+	width: 5%;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 420px;
+}
+#team .section_title .left .var{
+	border-right: 1px solid #c8c8c8;
+	width: 2px;
+	height: 15px;
+	margin-left: 56px;
+	margin-top: -8px;
+}
+#team .section_title .right{
+	border-top: 1px solid #c8c8c8;
+	width: 5%;
+	position: absolute;
+	margin-top: -20px;
+    margin-left: 627px;
+}
+#team .section_title .right .var{
+	border-right: 1px solid #c8c8c8;
+	width: 2px;
+	height: 15px;
+    margin-left: -1px;
+	margin-top: -8px;
+}
+/*title line end*/
 #team .section_title h3{
 	font-family: 'Dosis', sans-serif;
 	font-size: 24px;
@@ -162,19 +192,105 @@ p span a{
 	padding: 1px;
 }
 /*image hover color*/
-[class*=" imghvr-"] h5, [class^=imghvr-]h5{
-  background-color: #21c692;
+[class*=" imghvr-"] figcaption, [class^=imghvr-] figcaption{
+  background-color: #21c692 !important;
 }
 
 #team .team_icon{
-	text-align: center;
 	text-transform: uppercase;
-	margin-bottom: 50px;
 }
-#team .team_icon h5{
+#team .team_icon .member_info{
+	margin-right: 70px;
+}
+#team .team_icon .member_info h5{
 	font-family: 'Dosis', sans-serif;
 	font-size: 18px;
 	color: #fff;
 	letter-spacing: 10px;
-	text-transform: uppercase; 
+	text-transform: uppercase;
+	text-align: right;
+	margin-top: 200px; 
+}
+#team .team_icon .member_info p{
+	font-family: 'Dosis', sans-serif;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-align: right; 
+}
+#team .team_icon .icon_area{
+	text-align: center;
+}
+#team .team_icon .icon_area i{
+	border: 1px solid #fff;
+	padding: 10px;
+	border-radius: 100%;
+	margin: 80px 20px 10px 10px;
+	bottom: 0%;
+	color: #fff;
+}
+#team .team_icon .icon_area i:hover{
+	border: 1px solid #fff;
+	color:#fff;
+	cursor: pointer;
+	background: #21c692;
+}
+
+/* ============================================
+		team section css section ( navbar )
+===============================================*/
+
+#buy{
+	padding: 80px 0;
+	background-color: #000;
+}
+#buy .buy_content .logo{
+	position: relative;
+    margin-left: 500px;
+    margin-right: 500px;
+
+    margin-bottom: 35px;
+}
+#buy .buy_content h3{
+	font-family: 'Dosis', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#buy .buy_content p{
+	font-family: 'Dosis', sans-serif;
+	font-size: 12px;
+	color: #fff;
+	letter-spacing: 2px;
+	text-align: center;
+	border: 1px solid #fff;
+	width: 26%;
+	display: block;
+	margin: 0 auto;
+	line-height: 22px;
+	margin-bottom: 25px;
+}
+#buy .buy_content .buy_button p{
+	border: none;
+    font-size: 12px;
+    font-style: 10px;
+    text-transform: uppercase;
+    padding-top: 11px;
+    letter-spacing: 0px;
+}
+#buy .buy_content .buy_button {
+	font-family: 'Dosis', sans-serif;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	border: 1px solid #fff;
+	display: block;
+	margin: 0 auto;
+	height: 70px;
+	width: 70px;
+	border-radius: 50px;
 }
