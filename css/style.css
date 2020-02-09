@@ -1,12 +1,13 @@
 /* google fonts link */
 @import url('https://fonts.googleapis.com/css?family=Dosis:300|Open+Sans:300&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Parisienne&display=swap');
 /* ============================================
 		global css section 
 ===============================================*/
-
+ 
 body{
 	font-family: 'Open Sans', sans-serif;
+	width: 100%;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -18,11 +19,20 @@ p span a{
 .dropdown-toggle::after {
     display: none;
 }
+.row{
+	margin: 0;
+	padding: 0;
+}
+.col-md-4,.col-md-8{
+	padding: 0;
+}
 
 /* ============================================
 		header section css section ( navbar )
 ===============================================*/
-
+header{
+	width: 100%;
+}
 .navbar-light .navbar-brand{
 	color: #21c692;
 }
@@ -71,12 +81,13 @@ p span a{
 }
 
 /* ============================================
-		about us section css section ( navbar )
+		about us section css section 
 ===============================================*/
 
 #about_us{
 	padding: 120px 0;
 	border-bottom: 1px solid #edeced;
+	width: 100%;
 }
 #about_us .section_title{
 	text-align: center;
@@ -109,6 +120,9 @@ p span a{
 	background: #21c692;
 	color: #fff;
 }
+#about_us .about_us_content{
+	padding: 0 15px;
+}
 #about_us .about_us_content h6{
 	text-transform: uppercase;
 	font-size: 18px;
@@ -119,6 +133,7 @@ p span a{
 	font-size: 16px;
 	font-family: 'Dosis', sans-serif;
 	letter-spacing: 1px;
+
 }
 #about_us .about_us_content .load_more a{
 	font-size: 12px;
@@ -138,12 +153,13 @@ p span a{
 }
 
 /* ============================================
-		team section css section ( navbar )
+		team section css section 
 ===============================================*/
 
 #team{
 	padding: 120px 0;
 	border-bottom: 1px solid #edeced;
+	width: 100%;
 }
 #team .section_title{
 	text-align: center;
@@ -156,21 +172,21 @@ p span a{
 	width: 5%;
 	position: absolute;
 	margin-top: 15px;
-	margin-left: 420px;
+	margin-left: 410px;
 }
 #team .section_title .left .var{
 	border-right: 1px solid #c8c8c8;
 	width: 2px;
 	height: 15px;
-	margin-left: 56px;
+	margin-left: 54px;
 	margin-top: -8px;
 }
 #team .section_title .right{
 	border-top: 1px solid #c8c8c8;
 	width: 5%;
 	position: absolute;
-	margin-top: -20px;
-    margin-left: 627px;
+	margin-top: -21px;
+    margin-left: 610px;
 }
 #team .section_title .right .var{
 	border-right: 1px solid #c8c8c8;
@@ -238,18 +254,17 @@ p span a{
 }
 
 /* ============================================
-		team section css section ( navbar )
+		team section css section
 ===============================================*/
 
 #buy{
 	padding: 80px 0;
 	background-color: #000;
+	width: 100%;
 }
 #buy .buy_content .logo{
 	position: relative;
-    margin-left: 500px;
-    margin-right: 500px;
-
+	text-align: center;
     margin-bottom: 35px;
 }
 #buy .buy_content h3{
@@ -282,7 +297,7 @@ p span a{
     padding-top: 11px;
     letter-spacing: 0px;
 }
-#buy .buy_content .buy_button {
+/*#buy .buy_content .buy_button {
 	font-family: 'Dosis', sans-serif;
 	font-size: 12px;
 	color: #fff;
@@ -293,4 +308,838 @@ p span a{
 	height: 70px;
 	width: 70px;
 	border-radius: 50px;
+}*/
+
+#buy .buy_content .buy_button {
+	text-align: center;
+}
+#buy .buy_content .buy_button .button_border {
+    height: 76px;
+    width: 76px;
+    border-radius: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    position: absolute;
+    margin-left: 502px;
+    margin-top: -3px;
+}
+#buy .buy_content .buy_button button{
+	height: 70px;
+	width: 70px;
+	border-radius: 100%;
+	background-color: #21c692;
+	color: #fff;
+	font-style: 12px;
+	font-family: 'Dosis', sans-serif;
+	position: relative;
+}
+#buy .buy_content .buy_button button:hover{
+	background-color: transparent;
+	color: #21c692;
+}
+
+/* ============================================
+		service css section
+===============================================*/
+
+#service{
+	padding: 120px 0;
+	border-bottom: 1px solid #edeced;
+	width: 100%;
+}
+#service .section_title{
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-bottom: 100px;
+}
+/*title line start*/
+#service .section_title .left{
+	border-top: 1px solid #c8c8c8;
+	width: 5%;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 340px;
+}
+#service .section_title .left .var{
+	border-right: 1px solid #c8c8c8;
+	width: 2px;
+	height: 15px;
+	margin-left: 54px;
+	margin-top: -8px;
+}
+#service .section_title .right{
+	border-top: 1px solid #c8c8c8;
+	width: 5%;
+	position: absolute;
+	margin-top: -26px;
+    margin-left: 680px;
+}
+#service .section_title .right .var{
+	border-right: 1px solid #c8c8c8;
+	width: 2px;
+	height: 15px;
+    margin-left: -1px;
+	margin-top: -8px;
+}
+.service_left{
+	margin-top: 65px;
+}
+.service_left .content1{
+	margin-bottom: 50px;
+}
+.service_left .content1 .service_content{
+	text-align: right;
+}
+.service_left .content1 .service_content h6{
+	text-transform: uppercase;
+	font-family: 'Dosis', sans-serif;
+}
+.service_left .content1 .service_content p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+.service_left  .content1 .service_icon{
+	margin-left: 25px;
+}
+.service_left .content1 .service_icon a{
+	text-align: center;
+}
+.service_left .content1 .service_icon i{
+	text-align: center;
+	border: 1px solid #21c692;
+	height: 45px;
+	width: 45px;
+	border-radius: 100%;
+	padding-top: 14px;
+	color: #fff;
+	background: #21c692;
+}
+
+.service_left .content1 .service_icon a::after{
+	height: 2px;
+    background: #21c692;
+    position: absolute;
+    left: 0;
+    margin-left: 65px;
+    margin-top: 23px;
+    content: "";
+    width: 0%;
+    transition: 0.5s ease-in-out;
+
+}
+.service_left .content1 .service_icon a:hover::after{
+	width: 100%;
+}
+
+.phone_img{
+	text-align: center;
+}
+
+.service_right{
+	margin-top: 65px;
+}
+.service_right .content1{
+	margin-bottom: 50px;
+}
+.service_right .content1 .service_content{
+	text-align: left;
+}
+.service_right .content1 .service_content h6{
+	text-transform: uppercase;
+	font-family: 'Dosis', sans-serif;
+}
+.service_right .content1 .service_content p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+.service_right .content1 .service_icon{
+	text-align: right;
+    padding-right: 25px;
+}
+.service_right .content1 .service_icon a{
+	text-align: center;
+}
+.service_right .content1 .service_icon i{
+	border: 1px solid #21c692;
+	height: 45px;
+	width: 45px;
+	border-radius: 100%;
+	padding-top: 14px;
+	color: #fff;
+	background: #21c692;
+}
+.service_right .content1 .service_icon a::after{
+	height: 2px;
+    background: #21c692;
+    position: absolute;
+    right: 0;
+    margin-right: 65px;
+    margin-top: 23px;
+    content: "";
+    width: 0%;
+    transition: 0.5s ease-in-out;
+
+}
+.service_right .content1 .service_icon a:hover::after{
+	width: 100%;
+}
+
+/* ============================================
+		progress bar css section
+===============================================*/
+
+
+#progress_section{
+	padding: 120px 0;
+	background: #f3f6f6;
+	width: 100%;
+}
+.bar{
+	margin-bottom: 20px;
+	margin-right: 15px;
+}
+#progress_section .bar h6{
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 2px;
+	color: #b5b6b8;
+}
+.progress{
+	height: 1.2rem !important;
+	border: 1px solid #21c692;
+	background: #fff;
+}
+.progress-bar{
+	background: #21c692 !important;
+}
+.progress-bar-success{
+	text-align: right;
+    padding-right: 7px;
+}
+.tamplete{
+	padding-left: 15px;
+}
+.tamplete h6{
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.tamplete p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #b5b6b8;
+	margin-bottom: .7rem !important;
+
+}
+.tamplete_button{
+	text-align: right: 
+}
+.btn-sm{
+	padding: .25rem .5rem;
+    font-size: 10px;
+    font-size: -2.125rem;
+    border-radius: 15px;
+}
+.btn-primary{
+	background: #21c692;
+	color: #fff;
+	border: #21c692;
+}
+
+/* ============================================
+		our work css section
+===============================================*/
+
+#work{
+	padding: 120px 0;
+	border-bottom: 1px solid #edeced;
+	width: 100%;
+}
+#work .section_title{
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-bottom: 100px;
+}
+/*title line start*/
+#work .section_title .left{
+	border-top: 1px solid #c8c8c8;
+	width: 5%;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 405px;
+}
+#work .section_title .left .var{
+	border-right: 1px solid #c8c8c8;
+	width: 2px;
+	height: 15px;
+	margin-left: 54px;
+	margin-top: -8px;
+}
+#work .section_title .right{
+	border-top: 1px solid #c8c8c8;
+	width: 5%;
+	position: absolute;
+	margin-top: -26px;
+    margin-left: 615px;
+}
+#work .section_title .right .var{
+	border-right: 1px solid #c8c8c8;
+	width: 2px;
+	height: 15px;
+    margin-left: -1px;
+	margin-top: -8px;
+}
+.filter_option{
+	text-align: center;
+}
+.filter_option ul li{
+	list-style: none;
+	display: inline-block;
+}
+.filter_option ul li a{
+	border: 1px solid #21c692;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #21c692;
+	transition: 0.5s ease-in-out;
+}
+.filter_option ul li a:hover{
+	border: 1px solid #21c692;
+	color: #fff;
+	background: #21c692;
+	transition: 0.4s ease-in-out;
+}
+
+.filter_option .active{
+	background-color:#21c692;
+	color: #fff; 
+}
+
+.gallery{
+	margin-top: 30px;
+}
+.gallery .row .col-md-4{
+	padding: 15px;
+}
+.portfolio{
+}
+.portfolio a .work_hover{
+	position: absolute;
+    height: 0%;
+    width: 92%;
+    background: #21c692;
+    left: 0;
+    bottom: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 14px;
+    transition: .5s ease-in-out;
+}
+
+/*.work_hover ul{
+    margin-top: -160px;
+    padding-top: -18px;
+    margin-left: 50px
+}
+.work_hover ul li{
+	list-style-type: none;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+}
+.work_hover ul li a{
+	text-align: center;
+
+}
+.work_hover ul li a i{
+	height: 40px;
+    width: 40px;
+    border: 1px solid red;
+    bottom: 0;
+    padding-top: 10px;
+    border-radius: 100%;
+    background: red;
+    color: white;
+    margin-left: 20px;
+}*/
+
+.portfolio a:hover .work_hover{
+    height: 95%;
+}
+
+.work_button{
+	text-align: center;
+	flex: auto;
+}
+.work_button .btn-primary:hover {
+    color: #fff;
+    background-color: #fff;
+    border-color: #21c692;
+    color: #21c692;
+    transition: 0.5s ease-in-out;
+}
+
+/* ============================================
+		testimonial slider css section
+===============================================*/
+
+#testimonial{
+	padding: 80px 0;
+	background: #111111;
+	width: 100%;
+}
+#testimonial .content .buy_button {
+	text-align: center;
+}
+#testimonial .content .buy_button .button_border {
+    height: 76px;
+    width: 76px;
+    border-radius: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    position: absolute;
+    margin-left: 502px;
+    margin-top: -3px;
+}
+#testimonial .content .buy_button img{
+	height: 70px;
+	width: 70px;
+	border-radius: 100%;
+	background-color: #21c692;
+	color: #fff;
+	font-style: 12px;
+	font-family: 'Dosis', sans-serif;
+	position: relative;
+}
+/*#testimonial .content .buy_button img:hover{
+	border: 1px solid #21c692;
+}*/
+.name{
+	text-align: center;
+	padding: 0 200px;
+	margin-top: 20px;
+}
+.name h5{
+	font-family: 'Dosis', sans-serif;
+	color: #fff;
+}
+.name p{
+	font-family: 'Dosis', sans-serif;
+	color: #fff;
+}
+.name span{
+	color: #fff;
+	padding: 0 20px;
+	font-family: 'Dosis', sans-serif;
+}
+
+/* ============================================
+		blog css section
+===============================================*/
+
+
+#blog{
+	padding: 120px 0;
+	border-bottom: 1px solid #edeced;
+	width: 100%;
+}
+#blog .section_title{
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-bottom: 100px;
+}
+/*title line start*/
+#blog .section_title .left{
+	border-top: 1px solid #c8c8c8;
+	width: 5%;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 405px;
+}
+#blog .section_title .left .var{
+	border-right: 1px solid #c8c8c8;
+	width: 2px;
+	height: 15px;
+	margin-left: 54px;
+	margin-top: -8px;
+}
+#blog .section_title .right{
+	border-top: 1px solid #c8c8c8;
+	width: 5%;
+	position: absolute;
+	margin-top: -26px;
+    margin-left: 615px;
+}
+#blog .section_title .right .var{
+	border-right: 1px solid #c8c8c8;
+	width: 2px;
+	height: 15px;
+    margin-left: -1px;
+	margin-top: -8px;
+}
+
+
+/* ============================================
+		pricing css section
+===============================================*/
+
+#pricing{
+	padding-top: 120px; 
+	border-bottom: 1px solid #edeced;
+	width: 100%;
+}
+#pricing .section_title{
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-bottom: 100px;
+}
+/*title line start*/
+#pricing .section_title .left{
+	border-top: 1px solid #c8c8c8;
+	width: 5%;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 390px;
+}
+#pricing .section_title .left .var{
+	border-right: 1px solid #c8c8c8;
+	width: 2px;
+	height: 15px;
+	margin-left: 54px;
+	margin-top: -8px;
+}
+#pricing .section_title .right{
+	border-top: 1px solid #c8c8c8;
+	width: 5%;
+	position: absolute;
+	margin-top: -26px;
+    margin-left: 630px;
+}
+#pricing .section_title .right .var{
+	border-right: 1px solid #c8c8c8;
+	width: 2px;
+	height: 15px;
+    margin-left: -1px;
+	margin-top: -8px;
+}
+.pricing_table{
+	background: #f3f6f6;
+}
+.pricing_table .col-md-4{
+	padding: 20px;
+	border-radius: 3px;
+}
+.p_table{
+	background: #fff;
+	border-radius: 2px;
+	box-shadow: 4px #aaaaaa;
+	margin: 40px 0;
+	box-shadow: 0px 5px 4px -3px #aaaaaa;
+	border-radius: 5px;
+}
+.p_table .table_head{
+	text-align: center;
+	padding: 10px 10px 0px 10px;
+}
+.p_table .table_head .head_content{
+	text-align: center;
+	padding: 40px 0;
+}
+.p_table .table_head .head_content h5{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+.p_table .table_head .head_content h2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+.p_table .table_head .head_content p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.p_table .table_body{
+	text-align: center;
+}
+.p_table .table_body .body_content p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	padding: 12px 0;
+	margin: 0;
+}
+.p_table .table_body .body_content .odd{
+	background: #fafafa;
+}
+.p_table .table_body .body_content .even{
+	background: #fff;
+}
+.table_body .buy_button {
+	text-align: center;
+	padding: 30px 0;
+}
+.table_body .buy_button .button_border {
+    height: 78px;
+    width: 78px;
+    border-radius: 100%;
+    background: #edefef;
+    position: absolute;
+    margin-left: 126px;
+    margin-top: -5px;
+    box-shadow: -1px 0px 0px 0px #aaaaaa;
+    transform: rotate(45deg);
+}
+.table_body .buy_button button{
+	height: 68px;
+	width: 68px;
+	border-radius: 100%;
+	background-color: #fff;
+	color: grey;
+	font-size: 22px;
+	font-family: 'Dosis', sans-serif;
+	position: relative;
+	border: 1px solid #edefef;
+    box-shadow: 1px 1px 0px 0px #aaaaaa;
+}
+.table_body .buy_button button:hover{
+	background-color: #21c692;
+	color: #fff;
+}
+
+.p_table:hover .head_content{
+	background: #21c692;
+	transition: 0.5s ease-in-out;
+}
+.p_table:hover .table_body .buy_button button{
+	color: #fff;
+	background: #21c692;
+	transition: 0.5s ease-in-out;
+}
+
+/* ============================================
+		contact css section
+===============================================*/
+
+
+#information{
+	padding: 120px 0;
+	border-bottom: 1px solid #edeced;
+	width: 100%;
+}
+#information .section_title{
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-bottom: 100px;
+}
+/*title line start*/
+#information .section_title .left{
+	border-top: 1px solid #c8c8c8;
+	width: 5%;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 375px;
+}
+#information .section_title .left .var{
+	border-right: 1px solid #c8c8c8;
+	width: 2px;
+	height: 15px;
+	margin-left: 54px;
+	margin-top: -8px;
+}
+#information .section_title .right{
+	border-top: 1px solid #c8c8c8;
+	width: 5%;
+	position: absolute;
+	margin-top: -26px;
+    margin-left: 645px;
+}
+#information .section_title .right .var{
+	border-right: 1px solid #c8c8c8;
+	width: 2px;
+	height: 15px;
+    margin-left: -1px;
+	margin-top: -8px;
+}
+
+.info .col-md-4, .info .col-md-8{
+	padding: 0 15px;
+}
+.info .icon{
+	text-align: right;
+}
+.info .icon a{
+	text-align: center;
+}
+.info .icon a i{
+	padding-top: 10px;
+    height: 60px;
+    width: 60px;
+    font-size: 40px;
+    border: 1px solid #21c692;
+    border-radius: 100%;
+    color: #21c692;
+}
+.info .icon a i:hover{
+    background: #21c692;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+/* ============================================
+		contact css section
+===============================================*/
+
+#contact{
+	padding: 120px 0;
+	border-bottom: 1px solid #edeced;
+	width: 100%;
+	background: #f3f6f6;
+}
+#contact .section_title{
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-bottom: 100px;
+}
+/*title line start*/
+#contact .section_title .left{
+	border-top: 1px solid #c8c8c8;
+	width: 5%;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 375px;
+}
+#contact .section_title .left .var{
+	border-right: 1px solid #c8c8c8;
+	width: 2px;
+	height: 15px;
+	margin-left: 54px;
+	margin-top: -8px;
+}
+#contact .section_title .right{
+	border-top: 1px solid #c8c8c8;
+	width: 5%;
+	position: absolute;
+	margin-top: -26px;
+    margin-left: 645px;
+}
+#contact .section_title .right .var{
+	border-right: 1px solid #c8c8c8;
+	width: 2px;
+	height: 15px;
+    margin-left: -1px;
+	margin-top: -8px;
+}
+
+.contact_form .row{
+	margin-bottom: 15px;
+}
+.contact_form .col-md-2{
+	padding: 0;
+}
+.contact_form .col-md-4{
+	padding: 0 15px;
+}
+.contact_form .contact_button{
+	text-align: center;
+}
+.contact_form .contact_button button{
+	border-radius: 20px;
+	text-transform: uppercase;
+}
+.contact_form .contact_button button:hover{
+	background: #fff;
+	color: #21c692;
+	transition: 0.5s ease-in-out;
+}
+
+/* ============================================
+		footer css section
+===============================================*/
+
+.footer_section{
+	padding-top: 70px;
+	background-color: #000;
+	width: 100%;
+	border-bottom: 3px solid #171717;
+}
+.footer_logo{
+	text-align: center;
+}
+.footer_logo i{
+	font-size: 26px;
+	color: #21c692;
+}
+.footer_logo h4{
+	font-family: 'Parisienne', cursive;
+}
+.footer_logo .logo{
+	position: relative;
+	text-align: center;
+    margin-bottom: 35px;
+}
+.footer_icon{
+	background-color: #000;
+	width: 100%;
+}
+.footer_icon .icon{
+	margin-top: 40px;
+	text-align: center;
+}
+.footer_icon .icon ul{
+	text-align: center;
+	padding: 0;
+}
+.footer_icon .icon ul li{
+	list-style: none;
+	display: inline-block;
+}
+.footer_icon .icon ul li a{
+	padding: 0 15px;
+}
+.footer_icon .icon ul li a i{
+	height: 30px;
+	width: 30px;
+	border: 1px solid #fff;
+	border-radius: 100%;
+	color: white;
+	padding-top: 5px;
+}
+.footer_icon .icon ul li a i:hover{
+	border-color: #21c692;
+	color: #21c692;
+	background: transparent;
+	transition: 0.4s ease-in-out;
+}
+
+.footer_last{
+	margin: 15px 0px;
+	text-align: center;
+}
+.footer_last button{
+	margin:10px 0;
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	border:1px solid grey;
+	text-align: center;
+}
+.footer_last button a i{
+	font-size: 30px;
+	color: #21c692;
+}
+.footer_last button:hover{
+	border-color: #21c692;
+	transition: 0.4s ease-in-out;
+}
+.footer_last p{
+	margin:20px 0px 40px 0px;
+	font-family: 'Dosis', sans-serif;
+	font-size: 18px;
+	letter-spacing: 3px;
 }
