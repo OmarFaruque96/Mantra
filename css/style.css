@@ -55,7 +55,9 @@ header{
 	float: right;
 	color: #21c692;
 }
-
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+	color: red;
+}
 /*banner section css*/
 
 .header_section{
@@ -207,50 +209,70 @@ header{
 	margin: 0;
 	padding: 1px;
 }
-/*image hover color*/
-[class*=" imghvr-"] figcaption, [class^=imghvr-] figcaption{
-  background-color: #21c692 !important;
+
+.comity{
+	position: relative;
+	width: 100%;
+}
+.comity img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.overlay{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #21c692;
+	width: 100%;
+	height: 0%;
+	overflow: hidden;
+	transition: 0.5s ease-in-out;
+}
+.comity:hover .overlay{
+	height: 100%;
 }
 
-#team .team_icon{
-	text-transform: uppercase;
+.team_icon{
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%,-50%);
 }
-#team .team_icon .member_info{
-	margin-right: 70px;
-}
-#team .team_icon .member_info h5{
+.team_icon h5{
 	font-family: 'Dosis', sans-serif;
 	font-size: 18px;
 	color: #fff;
-	letter-spacing: 10px;
+	letter-spacing: 8px;
 	text-transform: uppercase;
 	text-align: right;
-	margin-top: 200px; 
 }
-#team .team_icon .member_info p{
+.team_icon p{
 	font-family: 'Dosis', sans-serif;
 	font-size: 14px;
 	color: #fff;
 	letter-spacing: 5px;
 	text-transform: uppercase;
-	text-align: right; 
+	text-align: right;
+	padding-bottom: 30px;
 }
-#team .team_icon .icon_area{
-	text-align: center;
-}
-#team .team_icon .icon_area i{
-	border: 1px solid #fff;
-	padding: 10px;
-	border-radius: 100%;
-	margin: 80px 20px 10px 10px;
-	bottom: 0%;
+.icon_area a{
 	color: #fff;
 }
-#team .team_icon .icon_area i:hover{
+.icon_area i{
+	height: 40px;
+	width: 40px;
 	border: 1px solid #fff;
-	color:#fff;
-	cursor: pointer;
-	background: #21c692;
+	border-radius: 100%;
+	padding-top: 10px; 
+	margin: 0 8px;
+}
+.icon_area i:hover{
+	background: orange;
+	transition: 0.4s ease-in-out;
 }
 
 /* ============================================
@@ -372,7 +394,7 @@ header{
 	border-top: 1px solid #c8c8c8;
 	width: 5%;
 	position: absolute;
-	margin-top: -26px;
+	margin-top: -22px;
     margin-left: 680px;
 }
 #service .section_title .right .var{
@@ -582,7 +604,7 @@ header{
 	border-top: 1px solid #c8c8c8;
 	width: 5%;
 	position: absolute;
-	margin-top: -26px;
+	margin-top: -22px;
     margin-left: 615px;
 }
 #work .section_title .right .var{
@@ -626,59 +648,25 @@ header{
 }
 .portfolio{
 }
-.portfolio a .work_hover{
+
+.gallery .team_icon{
+	color: #fff;
 	position: absolute;
-    height: 0%;
-    width: 92%;
-    background: #21c692;
-    left: 0;
-    bottom: 0;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 14px;
-    transition: .5s ease-in-out;
-}
-
-/*.work_hover ul{
-    margin-top: -160px;
-    padding-top: -18px;
-    margin-left: 50px
-}
-.work_hover ul li{
-	list-style-type: none;
-	display: inline-block;
-	text-decoration: none;
+	top: 50%;
+	left: 45%;
 	text-align: center;
-}
-.work_hover ul li a{
-	text-align: center;
-
-}
-.work_hover ul li a i{
-	height: 40px;
-    width: 40px;
-    border: 1px solid red;
-    bottom: 0;
-    padding-top: 10px;
-    border-radius: 100%;
-    background: red;
-    color: white;
-    margin-left: 20px;
-}*/
-
-.portfolio a:hover .work_hover{
-    height: 95%;
+	transform: translate(-50%,-50%);
 }
 
 .work_button{
+	padding-top: 20px; 
 	text-align: center;
-	flex: auto;
+	width: 100%;
 }
+
 .work_button .btn-primary:hover {
-    color: #fff;
-    background-color: #fff;
-    border-color: #21c692;
-    color: #21c692;
+    background: #21c692;
+    color: #000;
     transition: 0.5s ease-in-out;
 }
 
@@ -687,7 +675,7 @@ header{
 ===============================================*/
 
 #testimonial{
-	padding: 80px 0;
+	padding: 120px 0px 70px 0px;
 	background: #111111;
 	width: 100%;
 }
@@ -735,7 +723,9 @@ header{
 	padding: 0 20px;
 	font-family: 'Dosis', sans-serif;
 }
-
+.carousel ol{
+	display: none;
+} 
 /* ============================================
 		blog css section
 ===============================================*/
@@ -751,6 +741,7 @@ header{
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	margin-bottom: 100px;
+	position: relative;
 }
 /*title line start*/
 #blog .section_title .left{
@@ -771,7 +762,7 @@ header{
 	border-top: 1px solid #c8c8c8;
 	width: 5%;
 	position: absolute;
-	margin-top: -26px;
+	margin-top: -22px;
     margin-left: 615px;
 }
 #blog .section_title .right .var{
@@ -780,6 +771,98 @@ header{
 	height: 15px;
     margin-left: -1px;
 	margin-top: -8px;
+}
+
+/* blog body content */
+.blog_section{
+
+}
+.blog_body{
+	position: relative;
+}
+.blog_body .blog_image img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.blog_overlay{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #21c692;
+	width: 100%;
+	height: 0%;
+	transition: 0.5s ease-in-out;
+	z-index: 1;
+}
+.blog_body:hover .blog_overlay{
+	height: 100%;
+} 
+.blog_overlay .icon{
+	position: absolute;
+	overflow: hidden;
+	left: 40%;
+	top: 35%;
+	height: 100%;
+	width: 100%;
+}
+.blog_overlay .icon a{
+	display: inline-block;
+}
+.blog_overlay .icon a .up{
+	height: 50px;
+	width: 50px;
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+}
+.blog_overlay .icon a .lw{
+	height: 50px;
+	width: 50px;
+	border-top: 3px solid #fff;
+	border-left: 3px solid #fff;
+	margin-left: 47px;
+	margin-top: -3px; 
+}
+.blog_date{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border:1px solid #fff;
+	background-color: #21c692;
+	position: absolute;
+	top: -10%;
+	left: 45%;
+	z-index: 9999;
+}
+.blog_pin{
+	height: 20px;
+    width: 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    position: absolute;
+    right: -10px;
+    top: 10;
+    top: 25%;
+    transform: rotate(45deg);
+    z-index: 9999;
+}
+
+/* blog details */
+.blog_details{
+	margin-top: 50px;
+}
+.blog_details h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	letter-spacing: 4px;
+	color: #726f75;
+}
+.blog_details p{
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 30px;
+    font-size: 14px;
+    color: #726f75;
 }
 
 
@@ -817,7 +900,7 @@ header{
 	border-top: 1px solid #c8c8c8;
 	width: 5%;
 	position: absolute;
-	margin-top: -26px;
+	margin-top: -22px;
     margin-left: 630px;
 }
 #pricing .section_title .right .var{
@@ -955,7 +1038,7 @@ header{
 	border-top: 1px solid #c8c8c8;
 	width: 5%;
 	position: absolute;
-	margin-top: -26px;
+	margin-top: -22px;
     margin-left: 645px;
 }
 #information .section_title .right .var{
@@ -1025,7 +1108,7 @@ header{
 	border-top: 1px solid #c8c8c8;
 	width: 5%;
 	position: absolute;
-	margin-top: -26px;
+	margin-top: -22px;
     margin-left: 645px;
 }
 #contact .section_title .right .var{
