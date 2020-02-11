@@ -740,7 +740,7 @@ header{
 	text-align: center;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 	position: relative;
 }
 /*title line start*/
@@ -774,8 +774,8 @@ header{
 }
 
 /* blog body content */
-.blog_section{
-
+.blog_footer{
+	margin-bottom: 100px;
 }
 .blog_body{
 	position: relative;
@@ -847,7 +847,18 @@ header{
     transform: rotate(45deg);
     z-index: 9999;
 }
-
+.blog_pin_right{
+	height: 20px;
+    width: 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    position: absolute;
+    left: -10px;
+    top: 10;
+    top: 50%;
+    transform: rotate(45deg);
+    z-index: 9999;
+}
 /* blog details */
 .blog_details{
 	margin-top: 50px;
@@ -865,7 +876,9 @@ header{
     color: #726f75;
 }
 
-
+.blog_footer .row .col-md-4{
+	text-align: right;
+}
 /* ============================================
 		pricing css section
 ===============================================*/
